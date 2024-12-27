@@ -1,0 +1,132 @@
+.profile {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile__labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.profile__avatar {
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.profile__name {
+  margin: 0 auto;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+.profile__description {
+  margin: 0 auto;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.profile__edit-button {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  background-color: black;
+  border: solid 1px white;
+  display: flex;
+}
+
+.profile__edit-svg {
+  transform: scale(1.2);
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.profile__add-button {
+  width: calc(100% - 38px);
+  margin: 36px 0;
+  min-height: 50px;
+  background-color: black;
+  border-radius: 2px;
+  border: solid 2px white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile__labels {
+    justify-content: center;
+    align-items: start;
+  }
+
+  .profile__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .profile__edit-button {
+    margin: 0 20px;
+  }
+  .profile__add-button {
+    max-width: 150px;
+    margin: 36px 0;
+    min-height: 50px;
+    background-color: black;
+    border-radius: 2px;
+    border: solid 2px white;
+    cursor: pointer;
+  }
+  .profile__description {
+    margin: 0;
+  }
+  .profile__avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .profile {
+    justify-content: space-between;
+  }
+  .profile__name {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14; /* 114.286% */
+  }
+  .profile__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+  }
+}

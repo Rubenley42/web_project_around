@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An image sharing site for explorers" />
+    <meta name="keywords" content="Photography, Travel, Landscapes" />
+    <meta name="author" content="Ruben Leyzaola" />
+    <title>Around The U.S.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+
+  
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo.svg"
+            alt="Around The U.S. Logo"
+            class="nav__logo"
+          />
+        </nav>
+        <h1 class="header__title">Around The U.S.</h1>
+        <div class=""></div>
+      </header>
+      <main class="content">
+        <section class="popup">
+          <div class="popup__container">
+            <button type="submit" class="popup__close-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="58"
+                height="57"
+                fill="none"
+                class="popup__close-svg"
+              >
+                <path
+                  fill="#fff"
+                  d="M41.57 12.57 29 25.143 16.43 12.57l-3.143 3.143 12.57 12.57-12.57 12.571 3.142 3.143L29 31.427l12.57 12.57 3.144-3.142-12.571-12.57 12.57-12.572-3.142-3.142Z"
+                />
+              </svg>
+            </button>
+            <form name="edit" class="popup__form">
+              <h4 class="popup__title">Editar perfil</h4>
+              <input
+                type="text"
+                name="profile-name"
+                id="#profile-name"
+                placeholder="Nombre"
+                class="popup__input popup__input_name"
+              />
+              <input
+                type="text"
+                name="profile-about"
+                id="#profile-about"
+                placeholder="Acerca de mí"
+                class="popup__input popup__input_about"
+              />
+              <button type="submit" class="popup__save-button">Guardar</button>
+            </form>
+          </div>
+        </section>
+        <section class="profile" id="profile">
+          <div class="profile__content">
+            <img
+              src="./images/avatar.png"
+              alt="Avatar image"
+              class="profile__avatar"
+            />
+            <div class="profile__labels">
+              <div class="profile__title">
+                <h2 class="profile__name">Jacques Cousteau</h2>
+                <button class="profile__edit-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="8"
+                    fill="none"
+                    class="profile__edit-svg"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M7.5.996 1.953 6.575l-.99-1.01L6.494 0 7.5.996ZM0 7.5l1.472-.441-1.033-.996L0 7.5Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <p class="profile__description">Explorador</p>
+            </div>
+          </div>
+          <button class="profile__add-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="M16 7.111H8.889V0H7.11v7.111H0V8.89h7.111V16H8.89V8.889H16V7.11Z"
+              />
+            </svg>
+          </button>
+        </section>
+        <section class="photo-grid">
+          <div class="photo-grid__card">
+            <img
+              src="./images/grid-picture-0.png"
+              alt="Yosemite Landscape"
+              class="photo-grid__card-image"
+            />
+            <div class="photo-grid__card-bottom">
+              <h3 class="photo-grid__card-title">Valle de Yosemite</h3>
+              <button class="photo-grid__card-button_like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="19"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.376 9.786c2.165-2.243 2.165-5.884 0-8.104a5.415 5.415 0 0 0-7.845 0l-1.05 1.11-1.05-1.088C7.266-.56 3.751-.56 1.608 1.682.558 2.77 0 4.213 0 5.745 0 7.277.579 8.72 1.608 9.808L10.48 19l8.895-9.214ZM1.372 5.745c0-1.155.428-2.22 1.222-3.02.814-.843 1.864-1.265 2.915-1.265 1.05 0 2.1.422 2.915 1.265l2.057 2.11 2.058-2.132a4.026 4.026 0 0 1 5.83 0 4.327 4.327 0 0 1 1.222 3.02c0 1.154-.429 2.22-1.222 3.02l-7.888 8.192-7.887-8.17c-.772-.822-1.222-1.888-1.222-3.02Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="photo-grid__card">
+            <img
+              src="./images/grid-picture-1.png"
+              alt="Lago Louise Landscape"
+              class="photo-grid__card-image"
+            />
+            <div class="photo-grid__card-bottom">
+              <h3 class="photo-grid__card-title">Lago Louise</h3>
+              <button class="photo-grid__card-button_like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="19"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.376 9.786c2.165-2.243 2.165-5.884 0-8.104a5.415 5.415 0 0 0-7.845 0l-1.05 1.11-1.05-1.088C7.266-.56 3.751-.56 1.608 1.682.558 2.77 0 4.213 0 5.745 0 7.277.579 8.72 1.608 9.808L10.48 19l8.895-9.214ZM1.372 5.745c0-1.155.428-2.22 1.222-3.02.814-.843 1.864-1.265 2.915-1.265 1.05 0 2.1.422 2.915 1.265l2.057 2.11 2.058-2.132a4.026 4.026 0 0 1 5.83 0 4.327 4.327 0 0 1 1.222 3.02c0 1.154-.429 2.22-1.222 3.02l-7.888 8.192-7.887-8.17c-.772-.822-1.222-1.888-1.222-3.02Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="photo-grid__card">
+            <img
+              src="./images/grid-picture-2.png"
+              alt="Montañas Calvas Landscape"
+              class="photo-grid__card-image"
+            />
+            <div class="photo-grid__card-bottom">
+              <h3 class="photo-grid__card-title">Montañas Calvas</h3>
+              <button class="photo-grid__card-button_like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="19"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.376 9.786c2.165-2.243 2.165-5.884 0-8.104a5.415 5.415 0 0 0-7.845 0l-1.05 1.11-1.05-1.088C7.266-.56 3.751-.56 1.608 1.682.558 2.77 0 4.213 0 5.745 0 7.277.579 8.72 1.608 9.808L10.48 19l8.895-9.214ZM1.372 5.745c0-1.155.428-2.22 1.222-3.02.814-.843 1.864-1.265 2.915-1.265 1.05 0 2.1.422 2.915 1.265l2.057 2.11 2.058-2.132a4.026 4.026 0 0 1 5.83 0 4.327 4.327 0 0 1 1.222 3.02c0 1.154-.429 2.22-1.222 3.02l-7.888 8.192-7.887-8.17c-.772-.822-1.222-1.888-1.222-3.02Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="photo-grid__card">
+            <img
+              src="./images/grid-picture-3.png"
+              alt="Latemar Landscape"
+              class="photo-grid__card-image"
+            />
+            <div class="photo-grid__card-bottom">
+              <h3 class="photo-grid__card-title">Latemar</h3>
+              <button class="photo-grid__card-button_like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="19"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.376 9.786c2.165-2.243 2.165-5.884 0-8.104a5.415 5.415 0 0 0-7.845 0l-1.05 1.11-1.05-1.088C7.266-.56 3.751-.56 1.608 1.682.558 2.77 0 4.213 0 5.745 0 7.277.579 8.72 1.608 9.808L10.48 19l8.895-9.214ZM1.372 5.745c0-1.155.428-2.22 1.222-3.02.814-.843 1.864-1.265 2.915-1.265 1.05 0 2.1.422 2.915 1.265l2.057 2.11 2.058-2.132a4.026 4.026 0 0 1 5.83 0 4.327 4.327 0 0 1 1.222 3.02c0 1.154-.429 2.22-1.222 3.02l-7.888 8.192-7.887-8.17c-.772-.822-1.222-1.888-1.222-3.02Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="photo-grid__card">
+            <img
+              src="./images/grid-picture-4.png"
+              alt="Vanois National Park Landscape"
+              class="photo-grid__card-image"
+            />
+            <div class="photo-grid__card-bottom">
+              <h3 class="photo-grid__card-title">Vanois National Park</h3>
+              <button class="photo-grid__card-button_like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="19"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.376 9.786c2.165-2.243 2.165-5.884 0-8.104a5.415 5.415 0 0 0-7.845 0l-1.05 1.11-1.05-1.088C7.266-.56 3.751-.56 1.608 1.682.558 2.77 0 4.213 0 5.745 0 7.277.579 8.72 1.608 9.808L10.48 19l8.895-9.214ZM1.372 5.745c0-1.155.428-2.22 1.222-3.02.814-.843 1.864-1.265 2.915-1.265 1.05 0 2.1.422 2.915 1.265l2.057 2.11 2.058-2.132a4.026 4.026 0 0 1 5.83 0 4.327 4.327 0 0 1 1.222 3.02c0 1.154-.429 2.22-1.222 3.02l-7.888 8.192-7.887-8.17c-.772-.822-1.222-1.888-1.222-3.02Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="photo-grid__card">
+            <img
+              src="./images/grid-picture-5.png"
+              alt="Lago di Braies Landscape"
+              class="photo-grid__card-image"
+            />
+            <div class="photo-grid__card-bottom">
+              <h3 class="photo-grid__card-title">Lago di Braies</h3>
+              <button class="photo-grid__card-button_like">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="19"
+                  fill="none"
+                >
+                  <path
+                    fill="#000"
+                    d="M19.376 9.786c2.165-2.243 2.165-5.884 0-8.104a5.415 5.415 0 0 0-7.845 0l-1.05 1.11-1.05-1.088C7.266-.56 3.751-.56 1.608 1.682.558 2.77 0 4.213 0 5.745 0 7.277.579 8.72 1.608 9.808L10.48 19l8.895-9.214ZM1.372 5.745c0-1.155.428-2.22 1.222-3.02.814-.843 1.864-1.265 2.915-1.265 1.05 0 2.1.422 2.915 1.265l2.057 2.11 2.058-2.132a4.026 4.026 0 0 1 5.83 0 4.327 4.327 0 0 1 1.222 3.02c0 1.154-.429 2.22-1.222 3.02l-7.888 8.192-7.887-8.17c-.772-.822-1.222-1.888-1.222-3.02Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <p class="footer__copyright">&copy; 2021 Around The U.S.</p>
+      </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
