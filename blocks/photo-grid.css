@@ -38,7 +38,7 @@
   line-height: 1;
 }
 
-.photo-grid__card-button__like {
+.photo-grid__card-button_like {
   background-color: white;
   border: 0;
 }
